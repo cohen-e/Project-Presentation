@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="90077D1F-0652-BBD7-807D-B2D358D6B62B" name="AE" seqName="seg_0"/>
+   <object objectType="Table" objectID="D7366CF2-D2AA-A138-D368-2D59C317E3B5" name="NL" seqName="seg_0"/>
+   <object objectType="Table" objectID="A91F8F3F-B0DE-1AF8-F573-108A9AD458B2" name="NLM" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8CAD8FB4-3AD5-3B83-5C92-697A8E8F12D2" name="NLM_AE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D07B715B-AA7E-6424-185F-CF1B214C019D" name="NLM_NL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CEAF843A-A3AF-D82D-6982-9D5734B5CE16" name="NLM_NL_FKv1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

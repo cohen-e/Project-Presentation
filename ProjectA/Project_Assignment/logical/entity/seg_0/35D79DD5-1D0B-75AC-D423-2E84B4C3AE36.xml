@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35D79DD5-1D0B-75AC-D423-2E84B4C3AE36" name="NLM">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:16:49 UTC</createdTime>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="9B3CFDD8-1635-AD4E-9C30-E4EFEB5A3C8F">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:17:30 UTC</createdTime>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="date_added" id="E17CB2D4-7459-C1DF-2322-5DB8CCDB01DC">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:17:53 UTC</createdTime>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="employee_id" id="D9B183AF-306B-8B8A-1AD9-DF9860CDBABA">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:18:42 UTC</createdTime>
+<generatorID>EFD74E7E-4D9F-49D4-30B6-B34785C11B52</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>45659458-A9FC-BECC-3C03-E10E56A908E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="list_seq_id" id="910EBEB2-153E-8961-8694-6CA9D6FAE37A">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:19:11 UTC</createdTime>
+<generatorID>D9E5164B-3002-A7EF-3D91-5024BA6C2491</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B2B552B1-41AD-F878-F4FF-F866F874DAD7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_list_id" id="29F019A0-3D1C-E659-1F05-13D1E89A6E17">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:19:43 UTC</createdTime>
+<generatorID>4ABB335D-EDB7-3013-6769-E04DF2FEF119</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B2B552B1-41AD-F878-F4FF-F866F874DAD7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="27379DAC-35DE-3F9F-696C-4C76AD000143" name="{entity} PK">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-23 19:17:39 UTC</createdTime>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B3CFDD8-1635-AD4E-9C30-E4EFEB5A3C8F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
