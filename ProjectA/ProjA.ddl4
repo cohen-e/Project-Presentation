@@ -63,7 +63,7 @@ END;
 /
 
 create view nlm_view as
-SELECT id, date_added, AE_employee_id, NL_list_seq_id, NL_list_seq_id1, TYPE
+SELECT date_added, AE_employee_id, NL_list_seq_id, NL_list_seq_id1, TYPE
 FROM nlm
 WHERE TYPE = 'Notice List Member' ;
 
@@ -72,14 +72,12 @@ create or replace TRIGGER notice_list_member_trigger
      FOR EACH ROW
 BEGIN
      insert into nlm(
-        id,
         date_added,
         AE_employee_id,
         NL_list_seq_id,
         NL_list_seq_id1
         TYPE)
      VALUES (
-        :new.id,
         :new.date_added,
         :new.AE_employee_id,
         :new.NL_list_seq_id,
