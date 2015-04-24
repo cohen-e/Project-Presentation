@@ -15,23 +15,6 @@ select AE_seq.nextval into :new.employee_id from dual;
 end; 
 /
 
-DROP SEQUENCE Document_seq ; 
-create sequence Document_seq 
-start with 100 
-increment by 1 
-nomaxvalue 
-;
-DROP TRIGGER Document_PK_trig 
-; 
-
-create or replace trigger Document_PK_trig 
-before insert on Document
-for each row 
-begin 
-select Document_seq.nextval into :new.doc_id from dual; 
-end; 
-/
-
 DROP SEQUENCE NL_seq ; 
 create sequence NL_seq 
 start with 100 
@@ -62,15 +45,17 @@ create or replace trigger NLM_PK_trig
 before insert on NLM
 for each row 
 begin 
-select NLM_seq.nextval into :new.NL_list_seq_id1 from dual; 
+select NLM_seq.nextval into :new.NL_list_seq_id2 from dual; 
 end; 
 /
 
 DROP INDEX NLM_NL_list_seq_id1_FK_0 ;
 CREATE INDEX NLM_NL_list_seq_id1_FK_0 ON Document(NLM_NL_list_seq_id1) ;
-DROP INDEX AE_employee_id_FK_1 ;
-CREATE INDEX AE_employee_id_FK_1 ON NLM(AE_employee_id) ;
-DROP INDEX NL_list_seq_id_FK_2 ;
-CREATE INDEX NL_list_seq_id_FK_2 ON NLM(NL_list_seq_id) ;
-DROP INDEX NL_list_seq_id1_FK_3 ;
-CREATE INDEX NL_list_seq_id1_FK_3 ON NLM(NL_list_seq_id1) ;
+DROP INDEX NL_list_seq_id_FK_1 ;
+CREATE INDEX NL_list_seq_id_FK_1 ON Document(NL_list_seq_id) ;
+DROP INDEX AE_employee_id_FK_2 ;
+CREATE INDEX AE_employee_id_FK_2 ON NLM(AE_employee_id) ;
+DROP INDEX NL_list_seq_id_FK_3 ;
+CREATE INDEX NL_list_seq_id_FK_3 ON NLM(NL_list_seq_id) ;
+DROP INDEX NL_list_seq_id2_FK_4 ;
+CREATE INDEX NL_list_seq_id2_FK_4 ON NLM(NL_list_seq_id2) ;
