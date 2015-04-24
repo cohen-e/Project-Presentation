@@ -4,7 +4,7 @@
 <createdTime>2015-04-23 19:16:49 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,23 +15,12 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="9B3CFDD8-1635-AD4E-9C30-E4EFEB5A3C8F">
-<createdBy>Cohen</createdBy>
-<createdTime>2015-04-23 19:17:30 UTC</createdTime>
-<ownerDesignName>Project_Assignment</ownerDesignName>
-<engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 <Attribute name="date_added" id="E17CB2D4-7459-C1DF-2322-5DB8CCDB01DC">
 <createdBy>Cohen</createdBy>
 <createdTime>2015-04-23 19:17:53 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,7 +33,7 @@
 <generatorID>EFD74E7E-4D9F-49D4-30B6-B34785C11B52</generatorID>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>45659458-A9FC-BECC-3C03-E10E56A908E1</referedAttribute>
@@ -58,7 +47,7 @@
 <generatorID>D9E5164B-3002-A7EF-3D91-5024BA6C2491</generatorID>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B2B552B1-41AD-F878-F4FF-F866F874DAD7</referedAttribute>
@@ -72,9 +61,8 @@
 <generatorID>4ABB335D-EDB7-3013-6769-E04DF2FEF119</generatorID>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>B2B552B1-41AD-F878-F4FF-F866F874DAD7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -87,11 +75,11 @@
 <createdTime>2015-04-23 19:17:39 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
-<item key="611688D7-0262-0F19-1BDB-7D1F6F5274BA" value="true"/>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9B3CFDD8-1635-AD4E-9C30-E4EFEB5A3C8F</attributeRef>
+<attributeRef>29F019A0-3D1C-E659-1F05-13D1E89A6E17</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

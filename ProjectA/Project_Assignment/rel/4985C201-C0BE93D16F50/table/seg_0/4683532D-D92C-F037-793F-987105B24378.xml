@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4683532D-D92C-F037-793F-987105B24378" name="AE">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>482EF9B2-23C3-BC9A-2F22-4B621E4AF7B4</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="71A0F7ED-6CB7-483A-D5A0-66AF466EE1F3">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>45659458-A9FC-BECC-3C03-E10E56A908E1</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_name" id="43F25AC2-B115-FA5C-4AC5-596EBD348997">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>222E522C-3603-14CE-1520-A05E54F7DDB8</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_lab" id="A862A66E-9B93-8A2C-0E3E-ED78BF8AF1C5">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>86B91AE9-A680-33A7-15C6-74EDFB164659</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_division" id="517B30D5-0678-AC5B-34E1-6F286C66E597">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>DA345CEF-BEBA-4130-A683-A7D16C33AF23</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_status" id="E843AFFE-2853-3C44-93BD-CF6F6F63C11A">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>CE7AF968-7457-4262-144F-35991ED1ED7D</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_effective_date" id="E96E8591-3B64-9E7B-C40A-2984C807C079">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>9482AE78-3620-76D2-DB35-0B388CB93F30</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7970936-7620-8828-31EC-E30756BB6A5F" name="AE_PK">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>F65A06F3-B137-E350-3A9D-CEDAF1F2C095</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71A0F7ED-6CB7-483A-D5A0-66AF466EE1F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

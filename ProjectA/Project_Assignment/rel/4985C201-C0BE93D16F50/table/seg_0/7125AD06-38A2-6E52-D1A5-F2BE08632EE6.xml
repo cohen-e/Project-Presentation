@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7125AD06-38A2-6E52-D1A5-F2BE08632EE6" name="NL">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>4AA310A8-6D77-C546-A824-2EAF04E6EA44</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="list_seq_id" id="82B57417-DD40-D191-8AAA-E9DE3821E846">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>B2B552B1-41AD-F878-F4FF-F866F874DAD7</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_name" id="B8C13BBA-A69B-0CD3-A8CA-0239D5688FCE">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>5FAA8BBA-6CA5-ACF2-92F1-46926F5B238D</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ownership_div_code" id="F6F630EB-4A36-BF41-FE27-F140A658DBFB">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>F659CDAA-E108-D52D-F73D-0582362615BB</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_description" id="4EDDB87A-D185-5BEF-7B30-0561E61581FD">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>D313C48E-8F07-FADF-CDA4-E121BF0F42AE</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="external_view_name" id="8CDC818C-71ED-0E3F-5E5A-66187CC363D2">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>3234193C-B141-5AB2-0B8C-C5F397A497D4</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_status" id="45CE34D3-B9D9-1114-A4B3-ACFCE0E5617A">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>9101BC1C-874C-079D-C9A6-B563FC183960</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_effective_date" id="BA9956DA-60CE-A46F-B1AC-E81E4B5AEC87">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>D97EBA3E-2355-573B-8B01-0AC74D0A1B1B</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66A2F014-2883-999F-26EA-EDDEA50A01C8" name="NL_PK">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 16:03:48 UTC</createdTime>
+<generatorID>0902CB5A-08E3-CC9E-C7C7-CF0F02BFCA0C</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82B57417-DD40-D191-8AAA-E9DE3821E846"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

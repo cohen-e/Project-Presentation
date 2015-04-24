@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4AA310A8-6D77-C546-A824-2EAF04E6EA44" name="NL">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6B25C969-4CB8-E590-0A88-BA9F5174284E" name="Document">
 <createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:21:16 UTC</createdTime>
+<createdTime>2015-04-24 15:47:58 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
 <item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="list_seq_id" id="B2B552B1-41AD-F878-F4FF-F866F874DAD7">
+<Attribute name="doc_id" id="DE13113F-24F2-B869-F905-6090BCED66AD">
 <createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:21:37 UTC</createdTime>
+<createdTime>2015-04-24 15:48:50 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
 <item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
@@ -26,9 +26,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="list_name" id="5FAA8BBA-6CA5-ACF2-92F1-46926F5B238D">
+<Attribute name="attach_mimetype" id="3AF3AE24-0CF3-959E-DC8C-B137DD1CCB21">
 <createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:22:57 UTC</createdTime>
+<createdTime>2015-04-24 15:49:36 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
 <item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
@@ -37,11 +37,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40</dataTypeSize>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="ownership_div_code" id="F659CDAA-E108-D52D-F73D-0582362615BB">
+<Attribute name="attach_filename" id="E6D0742D-516A-96C0-9A1A-17EF95A4C836">
 <createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:23:19 UTC</createdTime>
+<createdTime>2015-04-24 15:50:03 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
 <item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
@@ -50,50 +50,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="list_description" id="D313C48E-8F07-FADF-CDA4-E121BF0F42AE">
+<Attribute name="attach_last_update" id="EB055203-0648-09F6-E29F-ABAD2D813E64">
 <createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:23:47 UTC</createdTime>
-<ownerDesignName>Project_Assignment</ownerDesignName>
-<engineerTo>
-<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3500</dataTypeSize>
-</Attribute>
-<Attribute name="external_view_name" id="3234193C-B141-5AB2-0B8C-C5F397A497D4">
-<createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:26:12 UTC</createdTime>
-<ownerDesignName>Project_Assignment</ownerDesignName>
-<engineerTo>
-<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-</Attribute>
-<Attribute name="list_status" id="9101BC1C-874C-079D-C9A6-B563FC183960">
-<createdBy>Cohen</createdBy>
-<createdTime>2015-03-31 19:45:56 UTC</createdTime>
-<ownerDesignName>Project_Assignment</ownerDesignName>
-<engineerTo>
-<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-</Attribute>
-<Attribute name="status_effective_date" id="D97EBA3E-2355-573B-8B01-0AC74D0A1B1B">
-<createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:27:52 UTC</createdTime>
+<createdTime>2015-04-24 15:50:24 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
 <item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
@@ -103,19 +64,57 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
+<Attribute name="attach_charset" id="933E109B-9EB5-F9EB-2DBB-3117383CB7BE">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 15:49:05 UTC</createdTime>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+</Attribute>
+<Attribute name="attach_file" id="E85BA406-9975-F594-E86C-14CBC7C96A36">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 15:50:47 UTC</createdTime>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="member_list_id" id="6BAD943E-EFEF-D738-2E17-70ED3FCC16C0">
+<createdBy>Cohen</createdBy>
+<createdTime>2015-04-24 15:55:55 UTC</createdTime>
+<generatorID>34ED9DAF-8155-D646-785B-EB60E76DEE65</generatorID>
+<ownerDesignName>Project_Assignment</ownerDesignName>
+<engineerTo>
+<item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>29F019A0-3D1C-E659-1F05-13D1E89A6E17</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="0902CB5A-08E3-CC9E-C7C7-CF0F02BFCA0C" name="{entity} PK">
+<identifier id="7E77E5E5-1AD8-304F-2652-304BBEE198AB" name="{entity} PK">
 <createdBy>Cohen</createdBy>
-<createdTime>2015-03-23 21:21:54 UTC</createdTime>
+<createdTime>2015-04-24 15:50:26 UTC</createdTime>
 <ownerDesignName>Project_Assignment</ownerDesignName>
 <engineerTo>
 <item key="4985C201-416A-07D5-AEA4-C0BE93D16F50" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>B2B552B1-41AD-F878-F4FF-F866F874DAD7</newElementsIDs>
 <usedAttributes>
-<attributeRef>B2B552B1-41AD-F878-F4FF-F866F874DAD7</attributeRef>
+<attributeRef>DE13113F-24F2-B869-F905-6090BCED66AD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
