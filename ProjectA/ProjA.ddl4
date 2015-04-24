@@ -4,7 +4,7 @@ drop view nlm_view ;
 
 create view ae_view as
 SELECT employee_id,employee_name, employee_lab,employee_division, 
-employee_status,status_effective_date, TYPE 
+employee_status,status_effective_date 
 FROM AE
 WHERE TYPE = 'Employee' ;
 
@@ -18,22 +18,20 @@ BEGIN
     employee_lab,
     employee_division,
     employee_status,
-    status_effective_date,
-    TYPE)
+    status_effective_date)
      VALUES (
         :new.employee_id,
         :new.employee_name,
         :new.employee_lab,
         :new.employee_division,
         :new.employee_status,
-        :new.status_effective_date,
-        'Employee') ;
+        :new.status_effective_date) ;
 END;
 /
 
 create view nl_view as
 SELECT list_seq_id, list_name, ownership_div_code, list_description,
-external_view_name, list_status, status_effective_date, TYPE 
+external_view_name, list_status, status_effective_date 
 FROM nl
 WHERE TYPE = 'Notice List' ;
 
@@ -48,8 +46,7 @@ BEGIN
         list_description,
         external_view_name,
         list_status,
-        status_effective_date,
-        TYPE)
+        status_effective_date)
      VALUES (
         :new.list_seq_id,
         :new.list_name,
@@ -57,13 +54,12 @@ BEGIN
         :new.list_description,
         :new.external_view_name,
         :new.list_status,
-        :new.status_effective_date,
-        'Notice List') ;
+        :new.status_effective_date) ;
 END;
 /
 
 create view nlm_view as
-SELECT date_added, AE_employee_id, NL_list_seq_id, NL_list_seq_id1, TYPE
+SELECT date_added, AE_employee_id, NL_list_seq_id, NL_list_seq_id1
 FROM nlm
 WHERE TYPE = 'Notice List Member' ;
 
@@ -75,13 +71,11 @@ BEGIN
         date_added,
         AE_employee_id,
         NL_list_seq_id,
-        NL_list_seq_id1
-        TYPE)
+        NL_list_seq_id1)
      VALUES (
         :new.date_added,
         :new.AE_employee_id,
         :new.NL_list_seq_id,
-        :new.NL_list_seq_id1
-        'Notice List Member') ;
+        :new.NL_list_seq_id1) ;
 END;
 /
