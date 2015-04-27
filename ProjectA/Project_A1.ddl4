@@ -1,6 +1,10 @@
 drop view ae_view ;
 drop view nl_view ;
 drop view nlm_view ;
+drop view nlm_nl_view;
+drop view nlm_nl_tree_view;
+drop view nlm_ae_tree_view;
+drop view nlm_combined_tree_view;
 
 create view ae_view as
 SELECT employee_id,employee_name, employee_lab,employee_division, 
@@ -26,7 +30,7 @@ BEGIN
         :new.employee_lab,
         :new.employee_division,
         :new.employee_status,
-        :new.status_effective_date
+        :new.status_effective_date,
         :new.network_account_id,
         :new.admin) ;
 END;
@@ -82,3 +86,48 @@ BEGIN
         :new.id) ;
 END;
 /
+
+CREATE VIEW nlm_nl_view AS 
+SELECT nlm.date_added, nlm.AE_employee_id as ae_employee_id, nl.list_name, nlm.NL_list_seq_id1,
+nlm.id, nlm.created as created
+FROM nlm nlm, nl nl
+WHERE nl.list_seq_id = nlm.NL_list_seq_id1;
+
+/
+
+CREATE VIEW nlm_nl_tree_view AS
+SELECT nl1.list_name         as Parent_name,
+       nlm.nl_list_seq_id1   as Parent_id,
+       'List: ' || nl2.list_name || ' ::: Owner Div : ' || nl2.ownership_div_code         as Child_name,
+       nlm.nl_list_seq_id    as Child_id,
+       'yes'                 as Is_list
+FROM nlm nlm
+JOIN nl nl1 ON nl1.list_seq_id = nlm.nl_list_seq_id1
+JOIN nl nl2 ON nl2.list_seq_id = nlm.nl_list_seq_id
+WHERE nlm.nl_list_seq_id is not NULL;
+
+/
+
+CREATE VIEW nlm_ae_tree_view AS
+SELECT nl.list_name          as Parent_name,
+       nlm.nl_list_seq_id1   as Parent_id,
+       'Employee : ' || ae.employee_name || ' ::: Div : ' || ae.employee_division || ' ::: Lab : ' || ae.employee_lab   as Child_name,
+       nlm.ae_employee_id    as Child_id,
+       'no'                  as Is_list
+FROM nlm nlm
+JOIN nl nl ON nl.list_seq_id = nlm.nl_list_seq_id1
+JOIN ae ae ON ae.employee_id = nlm.ae_employee_id
+WHERE nlm.ae_employee_id is not NULL;
+
+/
+
+CREATE VIEW nlm_combined_tree_view AS
+
+SELECT * FROM nlm_nl_tree_view
+
+UNION
+
+SELECT * FROM nlm_ae_tree_view;
+
+/
+
